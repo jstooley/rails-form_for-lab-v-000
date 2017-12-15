@@ -22,4 +22,9 @@ class StudentsController < ApplicationController
 	  @student.update(check_params(:room_number))
 	  redirect_to post_path(@student)
   end
+  
+  private
+  def check_params(*args)
+  	params.require(:student).permit(*args)
+	end
 end
