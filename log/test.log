@@ -1201,3 +1201,6 @@ Started GET "/school_classes/1" for 127.0.0.1 at 2017-12-15 19:49:29 +0000
 Processing by SchoolClassesController#show as HTML
   Parameters: {"id"=>"1"}
   [1m[35mSchoolClass Load (0.2ms)[0m  SELECT "school_classes".* FROM "school_classes"
+  [1m[36mSchoolClass Load (1.4ms)[0m  [1mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT 1[0m  [["id", nil]]
+Completed 404 Not Found in 83994ms (ActiveRecord: 1.6ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
