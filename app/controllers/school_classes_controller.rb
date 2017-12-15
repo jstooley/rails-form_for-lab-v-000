@@ -9,6 +9,9 @@ class SchoolClassesController < ApplicationController
   def show
   end
 
-  def create 
+  def create
+  end
+
+  def update
   end
 end
