@@ -8,5 +8,6 @@ class ApplicationController < ActionController::Base
   	 if params.require(:student).permit(*args)
      else
     params.require(:school_class).permit(*args)
+  end
 	end
 end
