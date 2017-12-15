@@ -7,6 +7,7 @@ class StudentsController < ApplicationController
   end
 
   def show
+    @student = Student.find(id: params(;:id))
   end
 
   def create
