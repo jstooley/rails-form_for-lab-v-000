@@ -1217,3 +1217,5 @@ Completed 404 Not Found in 83994ms (ActiveRecord: 1.6ms)
   [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "school_classes"[0m
 Processing by SchoolClassesController#create as HTML
   Parameters: {"school_class"=>{"title"=>"Computer Science", "room_number"=>"5"}}
+  [1m[35mSchoolClass Load (0.2ms)[0m  SELECT "school_classes".* FROM "school_classes"
+Unpermitted parameters: title, room_number
