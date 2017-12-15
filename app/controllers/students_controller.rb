@@ -19,7 +19,7 @@ class StudentsController < ApplicationController
 
   def update
     @student = Student.find(params[:id])
-	  @student.update(params(:title))
+	  @student.update(params(:first_name,:last_name))
 	  redirect_to post_path(@student)
   end
 end
