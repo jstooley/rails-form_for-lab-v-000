@@ -314,3 +314,4 @@ Processing by SchoolClassesController#edit as HTML
   Parameters: {"id"=>"3"}
   [1m[36mSchoolClass Load (0.2ms)[0m  [1mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT 1[0m  [["id", 3]]
   Rendered school_classes/edit.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 56ms (Views: 48.1ms | ActiveRecord: 0.8ms)
