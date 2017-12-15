@@ -11,4 +11,5 @@ class ApplicationController < ActionController::Base
        params.require(:school_class).permit(*args)
     end
 	end
+  
 end
