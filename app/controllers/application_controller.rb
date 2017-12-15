@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   private
 
-	def params(*args)
+	def check_params(*args)
   	params.require(:student || :school_class).permit(*args)
 	end
 end
