@@ -5,6 +5,6 @@ class ApplicationController < ActionController::Base
   private
 
 	def params(*args)
-  	params.permit(:student, school_class ).permit(*args)
+  	params.permit(:student, :school_class).permit(*args)
 	end
 end
