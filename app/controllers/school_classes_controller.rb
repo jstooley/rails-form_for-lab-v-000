@@ -8,7 +8,6 @@ class SchoolClassesController < ApplicationController
   end
 
   def show
-    binding.pry
     @school_class = SchoolClass.find(params[:id])
   end
 
