@@ -226,3 +226,52 @@ Processing by SchoolClassesController#show as HTML
   [1m[36mSchoolClass Load (0.1ms)[0m  [1mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT 1[0m  [["id", 2]]
   Rendered school_classes/show.html.erb within layouts/application (0.1ms)
 Completed 200 OK in 33ms (Views: 31.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/school_classes" for 96.29.171.239 at 2017-12-15 19:58:57 +0000
+Cannot render console from 96.29.171.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SchoolClassesController#index as HTML
+  Rendered school_classes/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 207ms (Views: 192.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/school_classes" for 96.29.171.239 at 2017-12-15 19:59:02 +0000
+Cannot render console from 96.29.171.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SchoolClassesController#index as HTML
+  Rendered school_classes/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/school_classes/1" for 96.29.171.239 at 2017-12-15 19:59:06 +0000
+Cannot render console from 96.29.171.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SchoolClassesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSchoolClass Load (0.3ms)[0m  SELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered school_classes/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 70ms (Views: 46.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/school_classes/new" for 96.29.171.239 at 2017-12-15 19:59:06 +0000
+Cannot render console from 96.29.171.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SchoolClassesController#new as HTML
+  Rendered school_classes/new.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 69ms (Views: 67.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/school_classes/new" for 96.29.171.239 at 2017-12-15 19:59:07 +0000
+Cannot render console from 96.29.171.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SchoolClassesController#new as HTML
+  Rendered school_classes/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 39ms (Views: 37.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/school_classes" for 96.29.171.239 at 2017-12-15 19:59:15 +0000
+Cannot render console from 96.29.171.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SchoolClassesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3QGUXJFIGTzgdLCmy2g2u5WU6VaPk5ri2p8Z9cFFPceU9Mk46TrKWb9jY+Hha/RBdFhmj46pHo+BT4lJDDbe3A==", "school_class"=>{"title"=>"title 2", "room_number"=>"123"}, "commit"=>"Create School class"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "school_classes" ("title", "room_number") VALUES (?, ?)  [["title", "title 2"], ["room_number", 123]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://67.205.188.72:50470/school_classes/3
+Completed 302 Found in 8ms (ActiveRecord: 3.8ms)
