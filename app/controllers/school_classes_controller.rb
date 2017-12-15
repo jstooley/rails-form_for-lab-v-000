@@ -9,7 +9,7 @@ class SchoolClassesController < ApplicationController
 
   def show
     binding.pry
-    @school_class = SchoolClass.find(id: params[:id])
+    @school_class = SchoolClass.find(params[:id])
   end
 
   def create
