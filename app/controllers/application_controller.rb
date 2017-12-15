@@ -5,9 +5,10 @@ class ApplicationController < ActionController::Base
   private
 
 	def check_params(*args)
-  	 if params.require(:student).permit(*args)
+  	 if params.require(:student)
+       params.require(:student).permit(*args)
      else
-    params.require(:school_class).permit(*args)
-  end
+       params.require(:school_class).permit(*args)
+    end
 	end
 end
