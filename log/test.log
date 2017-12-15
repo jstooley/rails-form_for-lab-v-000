@@ -1469,3 +1469,6 @@ Processing by SchoolClassesController#show as HTML
   [1m[35mSchoolClass Load (0.2ms)[0m  SELECT "school_classes".* FROM "school_classes"
   [1m[36mSchoolClass Load (0.3ms)[0m  [1mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT 1[0m  [["id", nil]]
   [1m[35mSchoolClass Load (0.1ms)[0m  SELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT 1[0m  [["id", {:id=>"1"}]]
+Completed 404 Not Found in 62627ms (ActiveRecord: 0.6ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
