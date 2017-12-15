@@ -12,6 +12,7 @@ class SchoolClassesController < ApplicationController
   end
 
   def create
+    require.pry
     @school_class = SchoolClass.new(school_class_params(:first_name,:last_name))
     @school_class.save
     redirect_to school_class_path(@school_class)
