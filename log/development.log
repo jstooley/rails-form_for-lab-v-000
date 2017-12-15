@@ -109,3 +109,43 @@ Started GET "/school_classes" for 96.29.171.239 at 2017-12-15 19:30:51 +0000
 Cannot render console from 96.29.171.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 Processing by SchoolClassesController#index as HTML
   Rendered school_classes/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 959ms (Views: 957.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 96.29.171.239 at 2017-12-15 19:30:52 +0000
+Cannot render console from 96.29.171.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 96.29.171.239 at 2017-12-15 19:30:52 +0000
+Cannot render console from 96.29.171.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 96.29.171.239 at 2017-12-15 19:30:52 +0000
+Cannot render console from 96.29.171.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 96.29.171.239 at 2017-12-15 19:30:52 +0000
+Cannot render console from 96.29.171.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 96.29.171.239 at 2017-12-15 19:30:52 +0000
+Cannot render console from 96.29.171.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/school_classes/new" for 96.29.171.239 at 2017-12-15 19:30:59 +0000
+Cannot render console from 96.29.171.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SchoolClassesController#new as HTML
+  Rendered school_classes/new.html.erb within layouts/application (31.2ms)
+Completed 200 OK in 83ms (Views: 75.9ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/school_classes" for 96.29.171.239 at 2017-12-15 19:31:07 +0000
+Cannot render console from 96.29.171.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SchoolClassesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ccOq7aXStS2kg43zsRcY4CnRWArM/6j51Qw+++IJY9Y4NveJ3aBmSPuUXrSbFNoayB3X083FLJSO3K5HL3qAzQ==", "school_class"=>{"title"=>"title", "room_number"=>"12"}, "commit"=>"Create School class"}
+Unpermitted parameters: title, room_number
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "school_classes" DEFAULT VALUES[0m
+  [1m[35m (6.0ms)[0m  commit transaction
+Redirected to http://67.205.188.72:50470/school_classes/1
+Completed 302 Found in 10ms (ActiveRecord: 6.6ms)
