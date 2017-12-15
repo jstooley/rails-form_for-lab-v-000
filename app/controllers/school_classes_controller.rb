@@ -8,11 +8,11 @@ class SchoolClassesController < ApplicationController
   end
 
   def show
-    binding.pry
     @school_class = SchoolClass.find(id: params[:id])
   end
 
   def create
+    binding.pry
     @school_class = SchoolClass.new(school_class_params(:first_name,:last_name))
     @school_class.save
     redirect_to school_class_path(@school_class)
