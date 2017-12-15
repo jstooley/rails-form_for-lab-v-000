@@ -14,12 +14,12 @@ class StudentsController < ApplicationController
   def create
     @student = Student.new(post_params(:title,:description))
   	@student.save
-  	redirect_to post_path(@post)
+  	redirect_to post_path(@student)
   end
 
   def update
     @student = Student.find(params[:id])
 	  @student.update(post_params(:title))
-	  redirect_to post_path(@post)
+	  redirect_to post_path(@student)
   end
 end
